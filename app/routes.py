@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     return render_template_string("""
         <form method="post">
-            <input name="name">
+            <input name="name" placeholder="Введите имя">
             <input type="submit">
         </form>
     """)
