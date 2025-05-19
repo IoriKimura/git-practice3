@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     name = ""
     if request.method == "POST":
-        name = request.form.get("str", "")
+        name = request.form.get("name", "")
     return render_template_string("""
         <form method="post">
             <input name="name" placeholder="Введите имя">
